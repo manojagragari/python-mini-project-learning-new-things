@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple registration form</title>
+</head>
+<body>
+    <div  display="flex" flex-direction="column" justify-content="center" align-items="center" style="height:100%;">
+        <h1>Registration Form</h1>
+        <form>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <label for="Gender">select you Gender</label><br><br>
+            <label for="male">male  </label>
+            <input type="radio" id="male" name="gender" value="male"><br>
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender" value="female"><br>
+            <label for="other">other  </label>
+            <input type="radio" id="other" name="gender" value="other"><br><br>
+            <label for="skills">select your skills</label><br><br>
+            <label for="skills">python</label>
+            <input type="checkbox" id="python" name="skills"><br>   
+            <label for="skills">java</label>
+            <input type="checkbox" id="java" name="skills"><br>
+            <label for="skills">cricket</label>
+            <input type="checkbox" id="cricket" name="skills"><br>   
+            <label for="skills">gardening</label>
+            <input type="checkbox" id="gardening" name="skills"><br>
+            <label for="skills">c++</label>
+            <input type="checkbox" id="c++" name="skills"><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

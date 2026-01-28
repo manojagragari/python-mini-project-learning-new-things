@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>three cards and curser point out to it it should hover means it comes up when point outed</title>
+    <style>
+        .card {
+            margin: 10px;
+            border:2px solid black;
+            transition: transform 0.9s ease, box-shadow 0.9s ease;
+            cursor: pointer;
+        }
+        
+        .card:hover {
+            /* transform: translateY(-20px);*/
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100%;border: 2px solid brown;">
+        <div class="card" style="background-color: lightblue;text-align: center;">
+            <img src="download.png" alt="Card Image">
+            <h2>Card 1</h2>
+            <p>Hover over me!</p>
+        </div>
+        <div class="card" style="background-color: lightgreen;text-align: center;">
+            <img src="download.png" alt="Card Image">    
+            <h2>Card 2</h2>
+            <p>Hover over me!</p>
+        </div>
+        <div class="card" style="background-color: lightcoral;text-align: center;">
+            <img src="download.png" alt="Card Image">
+            <h2>Card 3</h2>
+            <p>Hover over me!</p>
+        </div>
+    </div>
+</body>
+</html>
