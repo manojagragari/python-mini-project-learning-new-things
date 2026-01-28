@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>three cards and curser point out to it it should hover means it comes up when point outed</title>
     <style>
+        
         .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            flex-direction: column;
+            border:2px solid brown;
             margin: 10px;
+            margin: 2px;
             border:2px solid black;
             transition: transform 0.9s ease, box-shadow 0.9s ease;
             cursor: pointer;
+        }
+        @media (max-width: 500px){
+            .container{
+                background-color: grey;
+                flex-direction: column;
+            }
         }
         
         .card:hover {
@@ -20,19 +34,19 @@
     </style>
 </head>
 <body>
-    <div style="display: flex; justify-content: center; align-items: center; height: 100%;border: 2px solid brown;">
+    <div class="container" style="display: flex; justify-content: center; align-items: center; height: 100%;border: 2px solid brown;">
         <div class="card" style="background-color: lightblue;text-align: center;">
-            <img src="download.png" alt="Card Image">
+            <img src="download.png" alt="Card Image" style="width: 80%;">
             <h2>Card 1</h2>
             <p>Hover over me!</p>
         </div>
         <div class="card" style="background-color: lightgreen;text-align: center;">
-            <img src="download.png" alt="Card Image">    
+            <img src="download.png" alt="Card Image" style="width: 80%;"">    
             <h2>Card 2</h2>
             <p>Hover over me!</p>
         </div>
         <div class="card" style="background-color: lightcoral;text-align: center;">
-            <img src="download.png" alt="Card Image">
+            <img src="download.png" alt="Card Image" style="width: 80%;">
             <h2>Card 3</h2>
             <p>Hover over me!</p>
         </div>
